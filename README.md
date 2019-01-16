@@ -28,7 +28,7 @@ If you're taking this class and feel like there is a mistake or would like to ad
 # Usage
 
 Please restrict this to personal usage only. Content is provided by the [MLO lab](https://mlo.epfl.ch/) in the form of the class,
-Other authors and I just transcribed this stuff. 
+other authors and I just transcribed this stuff.
 
 # Acknowledgements
 

@@ -6,7 +6,7 @@
 \newline
 \section{Mock Exam Notes}
 \subsection{Normal equation}
-Unique if convex.\newline
+Unique if \textit{strictly} convex.\newline
 $\frac{1}{\sigma_k^2} X(X^Tw_k-y_k)+w_k = 0 \Leftrightarrow$ \newline
 $ w_k^* = (\frac{1}{\sigma_k^2} XX^T+I_D)^{-1} \frac{1}{\sigma_k^2}Xy_k$
 
@@ -34,19 +34,19 @@ Problem jointly convex? Compute $H(\hat{r}({v,w})) = \begin{bmatrix} 2w^2 & 4vw-
 \section{Multiple Choice Notes}
 \subsection{True statements}
 \begin{itemize}
-\item Regularisation term sometimes renders the min. problem into a strictly concave/convex problem.
-\item k-NN can be applied even if the data cannot be linearly separated.
+\item Regularization term $\rightarrow$ sometimes min to cvx problem.
+\item k-NN even data not lin sep.
 \item $max\{ 0, x\} = \underset{{\alpha \in [0,1]}}{max} \,\, \alpha x$ \newline $min\{ 0, x\} = \underset{{\alpha \in [0,1]}}{min}\,\,  \alpha x$
 \item $g(x) = \underset{y}{min}\,\, f(x,y) \Rightarrow g(x) \le f(x,y)$
 \item $\underset{x}{max}\,\, g(x) \le \underset{x}{max} \,\,f(x,y)$ \newline
 \item $\underset{x}{max} \,\, \underset{y}{min} \,\, f(x,y) \newline \le \underset{y}{min} \,\, \underset{x}{max} \,\, f(x,y)$\newline
-\item $\nabla_{W} (\mathbf{x}^T\mathbf{W}\mathbf{x}) = \mathbf{x}\mathbf{x}^T$
+\item $\nabla_{W} (\mathbf{x}^T\mathbf{W}\mathbf{x}) = \nabla_{W} (\sum_{i,j}W_{i,j}x_ix_j) = \mathbf{x}\mathbf{x}^T$
 \item $\nabla_{x} (\mathbf{x}^T\mathbf{W}\mathbf{x}) = (\mathbf{W}+\mathbf{W}^T)\mathbf{x}$
-\item K-means: optimal cluster (resp. centers) init $\rightarrow$ one step optimal representation points (resp. clusters).
-\item Logistic loss is typically preferred over $L_2$ loss in classification tasks.
-\item For optimising a MF of a $D\times N$ matrix, for large $D$, $N$ : \textit{per iteration, ALS has an increased computational cost over SGD} and \textit{per iteration, SGD cost is independent of D, N}.
+\item K-means: opt cluster (centers) init $\rightarrow$ one step opt representation points (clusters).
+\item Logistic loss is typically preferred over $L_2$ loss in classification.
+\item For optimising a MF of a $D\times N$ matrix, for large $D$, $N$ : \textit{per iteration, cost(ALS) $>$ cost(SGD)} and \textit{per iteration, SGD cost $\neq f(D, N)$}.
 \item The complexity of backprop for a nn with $L$ layers and $K$ nodes/layer is $O(K^2L)$
-\item CNN where the data is laid out in a one-dimensional fashion and the filter/kernel has $M$ non-zero terms. Ignoring the bias terms, there are $M$ parameters.
+\item One-dimensional CNN with filter/kernel $M$ non-zero terms. Without bias terms, $M$ parameters per layer.
 \end{itemize}
 
 \subsection{Convex functions}
@@ -62,9 +62,9 @@ Problem jointly convex? Compute $H(\hat{r}({v,w})) = \begin{bmatrix} 2w^2 & 4vw-
 \item $ln[\sum_k^Ke^{t_k}]$
 \end{itemize}
 
-\subsection{Non-convex functions}
-\begin{itemize}
-\item $f(x) = x^3, x \in [-1,1]$
-\item $f(x) = e^{-x^2}, x \in \mathbb{R}$
-\item $\sum \mathcal{N}$, $sin(x)\,\, , \forall x \in \mathbb{R}$ \newline
-\end{itemize}
+%\subsection{Non-convex functions}
+%\begin{itemize}
+%\item $f(x) = x^3, x \in [-1,1]$
+%\item $f(x) = e^{-x^2}, x \in \mathbb{R}$
+%\item $\sum \mathcal{N}$, $sin(x)\,\, , \forall x \in \mathbb{R}$ \newline
+%\end{itemize}

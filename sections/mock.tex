@@ -9,7 +9,7 @@ $w_n > 0 \rightarrow$ W pos def $\rightarrow \tilde{X}^T W \tilde{X}$ invertible
 prob model : \newline $p(\mathbf{y} | X, \mathbf{\beta}) = \prod_n \mathcal{N}(y_n | \mathbf{\beta}^T \mathbf{\tilde{x}}_n, \sfrac{1}{w_n})$. 
 
 \subsection{Subgradients}
-$MAE(\mathbf{w}) = \sfrac{1}{N} \sum_n |y_n - f(\mathbf{w}, \mathbf{w_n})|$. Use chain rule with subgradient $h(x) = sgn(x)$. \newline $\nabla \mathcal{L}(\mathbf{w}) = - \sfrac{1}{N} \sum_n h(y_n - f(\mathbf{w})) \cdot \nabla f(\mathbf{w}, \mathbf{x_n})$. Then update weights.
+$MAE(\mathbf{w}) = \sfrac{1}{N} \sum_n |y_n - f(\mathbf{w}, \mathbf{x_n})|$. Use chain rule with subgradient $h(x) = sgn(x)$. \newline $\nabla \mathcal{L}(\mathbf{w}) = - \sfrac{1}{N} \sum_n h(y_n - f(\mathbf{w})) \cdot \nabla f(\mathbf{w}, \mathbf{x_n})$. Then update weights.
 
 \subsection{Multiple output reg}
 $x_n$ has dim D but now $y_n$ has dim K. 
